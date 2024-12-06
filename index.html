@@ -1,0 +1,132 @@
+<!-- Declaração do tipo de documento HTML5 -->  
+<!DOCTYPE html>  
+<!-- Define o idioma do documento como português do Brasil -->  
+<html lang="pt-br">  
+<head>  
+   <!-- Define o conjunto de caracteres utilizado no documento -->  
+   <meta charset="UTF-8">  
+   <!-- Define a largura da viewport e a escala inicial para dispositivos móveis -->  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <!-- Define o título da página -->  
+   <title>Restaurante</title>  
+   <!-- Link para o arquivo de estilos CSS do Bootstrap 4 -->  
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
+   <!-- Link para o arquivo de estilos CSS personalizado -->  
+   <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+   <!-- Barra de navegação -->  
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+      <!-- Logotipo do restaurante -->  
+      <a class="navbar-brand" href="#">Raízes do Sabor Restaurante</a>  
+      <!-- Botão de toggle para dispositivos móveis -->  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+        <span class="navbar-toggler-icon"></span>  
+      </button>  
+      <!-- Menu de navegação -->  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+        <ul class="navbar-nav mr-auto">  
+           <!-- Item de menu ativo -->  
+           <li class="nav-item active">  
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>  
+           </li>  
+           <!-- Item de menu para o cardápio -->  
+           <li class="nav-item">  
+              <a class="nav-link" href="cardapio.html">Cardápio</a>  
+           </li>  
+           <!-- Item de menu para o contato -->  
+           <li class="nav-item">  
+              <a class="nav-link" href="#contato">Contato</a>  
+           </li>  
+        </ul>  
+      </div>  
+   </nav>  
+  
+   <!-- Tabela de horários de funcionamento -->  
+   <div class="container mt-5">  
+      <!-- Título da tabela -->  
+      <h2>Horários de Funcionamento</h2>  
+      <!-- Tabela -->  
+      <table class="table table-striped">  
+        <!-- Cabeçalho da tabela -->  
+        <thead>  
+           <tr>  
+              <th>Dia</th>  
+              <th>Horário</th>  
+           </tr>  
+        </thead>  
+        <!-- Corpo da tabela -->  
+        <tbody>  
+           <tr>  
+              <td>Segunda-feira</td>  
+              <td>Fechado</td>  
+           </tr>  
+           <tr>  
+              <td>Terça-feira</td>  
+              <td>11h - 15:30h</td>  
+           </tr>  
+           <tr>  
+              <td>Quarta-feira</td>  
+              <td>12h - 22h</td>  
+           </tr>  
+           <tr>  
+              <td>Quinta-feira</td>  
+              <td>12h - 22h</td>  
+           </tr>  
+           <tr>  
+              <td>Sexta-feira</td>  
+              <td>12h - 23h</td>  
+           </tr>  
+           <tr>  
+              <td>Sábado</td>  
+              <td>12h - 23h</td>  
+           </tr>  
+           <tr>  
+              <td>Domingo</td>  
+              <td>12h - 22h</td>  
+           </tr>  
+        </tbody>  
+      </table>  
+   </div>  
+  
+   <!-- Formulário de contato -->  
+   <div class="container mt-5" id="contato">  
+      <!-- Título do formulário -->  
+      <h2>Contato</h2>  
+      <!-- Formulário -->  
+      <form>  
+        <!-- Campo de nome -->  
+        <div class="form-group">  
+           <label for="nome">Nome:</label>  
+           <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">  
+        </div>  
+        <!-- Campo de e-mail -->  
+        <div class="form-group">  
+           <label for="email">E-mail:</label>  
+           <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">  
+        </div>  
+        <!-- Campo de mensagem -->  
+        <div class="form-group">  
+           <label for="mensagem">Mensagem:</label>  
+           <textarea class="form-control" id="mensagem" rows="3"></textarea>  
+        </div>  
+        <!-- Botão de envio -->  
+        <button type="submit" class="btn btn-primary">Enviar</button>  
+      </form>  
+   </div>  
+  
+   <!-- Rodapé -->  
+   <footer class="footer mt-5">  
+      <!-- Container do rodapé -->  
+      <div class="container">  
+        <!-- Texto do rodapé -->  
+        <span class="text-muted">&copy; 2023 Restaurante</span>  
+      </div>  
+   </footer>  
+  
+   <!-- Script do jQuery -->  
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>  
+   <!-- Script do Bootstrap 4 -->  
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+</body>  
+</html>

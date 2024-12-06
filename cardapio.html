@@ -1,0 +1,160 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>  
+<!-- Define o idioma do documento como português do Brasil -->
+<html lang="pt-br">  
+<head>  
+   <!-- Define o conjunto de caracteres utilizado no documento -->
+   <meta charset="UTF-8">  
+
+   <!-- Define a largura da viewport e a escala inicial para dispositivos móveis -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   
+   <!-- Define o título da página (o que aparecerá na aba do navegador) -->
+   <title>Cardápio</title>  
+   
+   <!-- Link para o arquivo de estilos CSS do Bootstrap 4, que fornece design responsivo e componentes prontos -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
+   
+   <!-- Link para o arquivo de estilos CSS personalizado, onde você pode adicionar seus próprios estilos -->
+   <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+   <!-- Barra de navegação (menu superior) -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+      <!-- Logotipo do restaurante, que redireciona para a página inicial -->
+      <a class="navbar-brand" href="#">Raízes do Sabor Restaurante</a>  
+      
+      <!-- Botão de toggle para dispositivos móveis (quando a tela for pequena, exibe um botão para expandir/collapse o menu) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+        <span class="navbar-toggler-icon"></span>  
+      </button>  
+      
+      <!-- Menu de navegação, com links para diferentes seções da página -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+        <ul class="navbar-nav mr-auto">  
+           <!-- Item de menu para a página inicial -->
+           <li class="nav-item">  
+              <a class="nav-link" href="index.html">Home</a>  
+           </li>  
+           <!-- Item de menu ativo, indicando que estamos na página de cardápio -->
+           <li class="nav-item active">  
+              <a class="nav-link" href="#">Cardápio <span class="sr-only">(current)</span></a>  
+           </li>  
+           <!-- Item de menu para a seção de contato -->
+           <li class="nav-item">  
+              <a class="nav-link" href="#contato">Contato</a>  
+           </li>  
+        </ul>  
+      </div>  
+   </nav>  
+   
+   <!-- Seção principal do cardápio -->
+   <div class="container mt-5">  
+      <!-- Título do cardápio -->
+      <h2>Cardápio</h2>  
+      
+      <!-- Grid do cardápio (layout responsivo com 3 colunas em telas médias ou maiores) -->
+      <div class="row">  
+        <!-- Coluna 1 do cardápio -->
+        <div class="col-md-4">  
+           <!-- Card de prato -->
+           <div class="card">  
+              <!-- Imagem do prato -->
+              <img src="img/file_milanesa.jfif" class="card-img-top" alt="Prato 1">  
+              <div class="card-body">  
+                <!-- Título do prato -->
+                <h5 class="card-title">Filé de Frango à milanesa</h5>  
+                <!-- Descrição do prato -->
+                <p class="card-text">Arroz, Feijão e Filé de Frango à milanesa grelhado</p>  
+                <!-- Preço do prato -->
+                <p class="card-text">Preço: R$ 20,00</p>  
+              </div>  
+           </div>  
+        </div>  
+        
+        <!-- Coluna 2 do cardápio -->
+        <div class="col-md-4">  
+           <!-- Card de prato -->
+           <div class="card">  
+              <img src="img/lasanha.jpg" class="card-img-top" alt="Lasanha a bolonhesa">  
+              <div class="card-body">  
+                <h5 class="card-title">Lasanha a bolonhesa</h5>  
+                <p class="card-text">Arroz, lasanha e salada</p>  
+                <p class="card-text">Preço: R$ 25,00</p>  
+              </div>  
+           </div>  
+        </div>  
+        
+        <!-- Coluna 3 do cardápio -->
+        <div class="col-md-4">  
+           <!-- Card de prato -->
+           <div class="card">  
+              <img src="img/file_mignon.jfif" class="card-img-top" alt="Prato 3">  
+              <div class="card-body">  
+                <h5 class="card-title">Filé Mignon à Parmegiana</h5>  
+                <p class="card-text">Arroz, Filé Mignon a Parmegiana e Batata Frita</p>  
+                <p class="card-text">Preço: R$ 30,00</p>  
+              </div>  
+           </div>  
+        </div>  
+      </div>  
+      
+      <!-- Grid do cardápio (continuação) -->
+      <div class="row mt-5">  
+        <!-- Coluna 1 -->
+        <div class="col-md-4">  
+           <!-- Card de prato -->
+           <div class="card">  
+              <img src="img/vinho.jfif" class="card-img-top" alt="Prato 4">  
+              <div class="card-body">  
+                <h5 class="card-title">Vinho Romanée-Conti</h5>  
+                <p class="card-text">Vinho Tinto Suave Sofisticado</p>  
+                <p class="card-text">Preço: R$ 49,00</p>  
+              </div>  
+           </div>  
+        </div>  
+        
+        <!-- Coluna 2 -->
+        <div class="col-md-4">  
+           <!-- Card de prato -->
+           <div class="card">  
+              <img src="img/royal.jfif" class="card-img-top" alt="Prato 5">  
+              <div class="card-body">  
+                <h5 class="card-title">Royal Salute</h5>  
+                <p class="card-text">Dose 320ml De Whisky Royal Salute 21</p>  
+                <p class="card-text">Preço: R$ 40,00</p>  
+              </div>  
+           </div>  
+        </div>  
+        
+        <!-- Coluna 3 -->
+        <div class="col-md-4">  
+           <!-- Card de prato -->
+           <div class="card">  
+              <img src="img/campari.jfif" class="card-img-top" alt="Campari">  
+              <div class="card-body">  
+                <h5 class="card-title">Dose de Campari</h5>  
+                <p class="card-text">Dose do aperitivo Campari</p>  
+                <p class="card-text">Preço: R$ 20,00</p>  
+              </div>  
+           </div>  
+        </div>  
+      </div>  
+   </div>  
+   
+   <!-- Rodapé -->
+   <footer class="footer mt-5">  
+      <!-- Container do rodapé -->
+      <div class="container">  
+        <!-- Texto do rodapé -->
+        <span class="text-muted">&copy; 2023 Restaurante</span>  
+      </div>  
+   </footer>  
+   
+   <!-- Script do jQuery (necessário para o funcionamento do Bootstrap 4) -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>  
+   
+   <!-- Script do Bootstrap 4 (para os componentes interativos, como o menu de navegação) -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+</body>  
+</html>
